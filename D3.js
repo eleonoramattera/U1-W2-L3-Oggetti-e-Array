@@ -34,7 +34,7 @@ if (d % 5 === 0) {
 */
 let e = 6;
 let f = 2;
-if (e === 8 || f === 8 || e - f === 8 || e + f === 8) {
+if (e === 8 || f === 8 || e - f === 8 || f - e === 8 || e + f === 8) {
   console.log("true");
 } else {
   console.log("false");
@@ -50,9 +50,9 @@ let totalShoppingCart = 40;
 let postage = 10;
 
 if (totalShoppingCart > 50) {
-  console.log(totalShoppingCart);
+  console.log("devi pagare", totalShoppingCart);
 } else {
-  console.log(totalShoppingCart + postage);
+  console.log("devi pagare", totalShoppingCart + postage);
 }
 
 /* ESERCIZIO 6
@@ -64,9 +64,9 @@ let totalShoppingCart2 = 40;
 totalShoppingCart2 = totalShoppingCart2 - 8;
 
 if (totalShoppingCart2 > 50) {
-  console.log(totalShoppingCart2);
+  console.log("devi pagare", totalShoppingCart2);
 } else {
-  console.log(totalShoppingCart2 + postage);
+  console.log("devi pagare", totalShoppingCart2 + postage);
 }
 
 /* ESERCIZIO 7
@@ -103,6 +103,11 @@ if (typeof x === "number") {
 } else {
   console.log("Questo non è un numero");
 }
+//OPPURE//
+
+let j = 12;
+console.log(typeof j);
+
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
@@ -181,5 +186,8 @@ console.log(array);
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 array[9] = 100;
+console.log(array);
 
+//OPPURE //
+console.log(array.splice(9, 1, 100));
 console.log(array);
